@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Ahmed M. Amin</title>
+    <meta name="description"
+        content="Curriculum Vitae of Ahmed M. Amin — Education, Honors, Grants, Skills, and Letters of Support.">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Ahmed M. Amin</a>
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="../industry/index.html"
+                        style="color: var(--global-theme-color); font-weight: 500;">Industry Portfolio &rarr;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <main class="main-content">
+            <h1>Curriculum Vitae</h1>
+
+            <!-- Download link -->
+            <div style="margin-bottom: 2rem;">
+                <a href="../assets/Ahmed_Academic_Resume.pdf" target="_blank" class="sidebar-cv-btn"
+                    style="display: inline-flex;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width:16px;height:16px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Full CV (PDF)
+                </a>
+            </div>
+
+            <!-- Research Experience -->
+            <h2>Research Experience</h2>
+            <div class="cv-item" style="margin-bottom: 2em;">
+                <p class="cv-item-title">Research Assistant - AI/ML Laboratory</p>
+                <p class="cv-item-subtitle">Southern Utah University</p>
+                <p class="cv-item-detail">
+                    • Developed a multi-sensor fusion framework for planetary rover localization using GPR, IMU, and
+                    wheel encoders under GPS-denied conditions.<br>
+                    • Implemented Extended Kalman filtering for nonlinear state estimation (abstract submitted to EMI
+                    2026).<br>
+                    • Redesigned 4-layer control PCBs with optimized stack-up and decoupling network layout to reduce
+                    switching noise.
+                </p>
+                <p class="cv-item-date">May 2025 – Present</p>
+            </div>
+
+            <div class="cv-item" style="margin-bottom: 2em;">
+                <p class="cv-item-title">Undergraduate Research: 5G Self-Interference Cancellation Antenna</p>
+                <p class="cv-item-subtitle">Southern Utah University</p>
+                <p class="cv-item-detail">
+                    • Designed a dual-fed microstrip at 2.45 GHz and integrated it with a quadrature coupler methodology
+                    for −43 dB port isolation.<br>
+                    • Demonstrated strong self-interference cancellation in the desired band, addressing full-duplex
+                    challenges [I-ETC 2026 submission].
+                </p>
+                <p class="cv-item-date">Spring 2025</p>
+            </div>
+
+            <div class="cv-item" style="margin-bottom: 2em;">
+                <p class="cv-item-title">Capstone: Low-Cost Dual-Band Radar System</p>
+                <p class="cv-item-subtitle">Southern Utah University</p>
+                <p class="cv-item-detail">
+                    • Designed, implemented, and experimentally validated a bistatic 5.8 GHz SDR-based FMCW radar and a
+                    24 GHz Doppler radar within a $1,000 budget.<br>
+                    • Engineered intermediate frequency (IF) processing pipelines via MATLAB to bypass the need for an
+                    expensive VNA, relying instead on 200 MHz oscilloscopes with VISA drivers.<br>
+                    • Conducted controlled measurements on a 24 GHz K-LC7 front-end, evaluating FMCW ranging limitations
+                    on small-RCS drones.
+                </p>
+                <p class="cv-item-date">Completed 2025</p>
+            </div>
+
+            <!-- Education -->
+            <h2>Education</h2>
+            <div class="cv-item">
+                <p class="cv-item-title">B.S. Electrical Engineering</p>
+                <p class="cv-item-subtitle">Minor: Mathematics</p>
+                <p class="cv-item-detail">Southern Utah University, Cedar City, UT <br> SUU GPA: 3.802 | Cumulative GPA:
+                    3.332</p>
+                <p class="cv-item-date">2023 – 2025</p>
+            </div>
+
+            <div class="cv-item">
+                <p class="cv-item-title">Electrical Engineering – Electronics & Communications</p>
+                <p class="cv-item-detail">Higher Technological Institute, 10th of Ramadan, Egypt <br> Uncompleted degree
+                    (transferred to SUU)</p>
+                <p class="cv-item-date">2017 – 2022</p>
+            </div>
+
+            <!-- Honors & Grants -->
+            <h2>Honors & Grants</h2>
+            <ul>
+                <li><strong>CONNECT Grant:</strong> Undergraduate Research Funding Award ($1,000) (2025)</li>
+                <li><strong>Dean's List:</strong> Recognition of Academic Excellence (4 Semesters)</li>
+                <li><strong>RECR Workshop:</strong> NSF-funded training on responsible research practices (Mar 2025)
+                </li>
+            </ul>
+
+            <!-- Technical Skills -->
+            <h2>Technical Skills</h2>
+
+            <div class="cv-item">
+                <p class="cv-item-title">RF & Signal Processing</p>
+                <p class="cv-item-detail">FMCW/Doppler Radar, SDR (Software Defined Radio), Antenna Design, Extended
+                    Kalman Filtering, DSP</p>
+            </div>
+
+            <div class="cv-item">
+                <p class="cv-item-title">Languages</p>
+                <p class="cv-item-detail">C/C++, Python, MATLAB, Verilog, ARM Assembly</p>
+            </div>
+
+            <div class="cv-item">
+                <p class="cv-item-title">MCUs & Platforms</p>
+                <p class="cv-item-detail">STM32, ESP32, Arduino, Raspberry Pi</p>
+            </div>
+
+            <div class="cv-item">
+                <p class="cv-item-title">Tools & Software</p>
+                <p class="cv-item-detail">CST Microwave Studio, ADS, Qucs-studio, KiCad, Altium Designer, GNU Radio,
+                    LabVIEW</p>
+            </div>
+
+            <!-- Letters of Support -->
+            <h2>Letters of Support</h2>
+            <p><em>Representative endorsements (available upon request):</em></p>
+
+            <blockquote>
+                <p>"Mr. Amin demonstrates exceptional dedication to understanding complex systems. His work on the
+                    dual-band radar project showed both technical rigor and creative problem-solving."</p>
+                <p>— <strong>Faculty Advisor</strong>, Department of Engineering</p>
+            </blockquote>
+            <br>
+            <blockquote>
+                <p>"A highly motivated researcher with strong laboratory skills. His ability to bridge hardware design
+                    and software implementation is notable."</p>
+                <p>— <strong>Research Supervisor</strong>, Robotics Laboratory</p>
+            </blockquote>
+        </main>
+    </div>
+
+    <script src="../data/config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

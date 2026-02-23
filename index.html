@@ -4,87 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed M. Amin | R&D Engineer & PhD Applicant</title>
-    <meta name="description"
-        content="Portfolio of Ahmed Amin, an Electronics & RF Engineer specializing in radar systems, SDR technology, Electronic Warfare, and cyber-physical security.">
-    <meta name="keywords"
-        content="Ahmed Amin, Ahmed M Amin, Ahmed Mohamed Amin, AMNx, AMNxLab, amnxlab.site, FMCW Radar Engineer, SDR Signal Processing, Electronic Warfare Researcher, RF Engineer, Radar Systems Utah, Embedded Systems Engineer, PCB Design, STM32, ARM Assembly, Southern Utah University, PhD Applicant, Dual-Band Radar, Cyber-Physical Security, Hardware Engineer">
-    <meta name="author" content="Ahmed Amin">
-    <link rel="canonical" href="https://amnxlab.site/">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://amnxlab.site/">
-    <meta property="og:title" content="Ahmed Amin | Electronics & RF Engineer">
-    <meta property="og:description"
-        content="Electronics & RF Engineer specializing in radar systems, SDR technology, Electronic Warfare, and cyber-physical security.">
-    <meta property="og:image" content="https://amnxlab.site/assets/profile.jpeg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://amnxlab.site/">
-    <meta property="twitter:title" content="Ahmed Amin | Electronics & RF Engineer">
-    <meta property="twitter:description"
-        content="Electronics & RF Engineer specializing in radar systems, SDR technology, Electronic Warfare, and cyber-physical security.">
-    <meta property="twitter:image" content="https://amnxlab.site/assets/profile.jpeg">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ahmed Mohamed Amin",
-      "givenName": "Ahmed",
-      "familyName": "Amin",
-      "alternateName": ["AMNx", "AMNxLab", "Ahmed Amin", "Ahmed M Amin", "E-WOLF", "Void0x11"],
-      "url": "https://amnxlab.site/",
-      "image": "https://amnxlab.site/assets/profile.jpeg",
-      "email": "mailto:ahmedamin@suumail.net",
-      "jobTitle": "Electronics & RF Engineer",
-      "description": "Electronics & RF Engineer specializing in FMCW radar systems, SDR technology, Electronic Warfare, and cyber-physical security.",
-      "knowsAbout": [
-        "FMCW Radar",
-        "Software Defined Radio (SDR)",
-        "Electronic Warfare",
-        "Signal Processing",
-        "Embedded Systems",
-        "PCB Design",
-        "RF Engineering",
-        "Cyber-Physical Security",
-        "ARM Assembly",
-        "STM32 Microcontrollers"
-      ],
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "Southern Utah University",
-        "url": "https://www.suu.edu/"
-      },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Southern Utah University"
-      },
-      "nationality": "Egyptian",
-      "sameAs": [
-        "https://github.com/amnxlab",
-        "https://www.linkedin.com/in/amnxlab/",
-        "https://x.com/AMNxlab",
-        "https://www.youtube.com/@AMNxLab",
-        "https://orcid.org/0009-0000-5211-709X",
-        "https://www.researchgate.net/profile/Ahmed-Amin-97"
-      ]
-    }
-    </script>
+    <title>Ahmed M. Amin | Portfolios</title>
+    <meta name="description" content="Ahmed Amin - Hardware Engineer and Research Scholar. Select a portfolio to view.">
     <link rel="icon" type="image/x-icon" href="assets/icon.ico">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&family=Merriweather:wght@400;700&display=swap"
-        rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         tailwind.config = {
@@ -93,10 +19,9 @@
                 extend: {
                     colors: {
                         primary: { 500: '#00ff41' },
-                        secondary: { 500: '#00d9ff' }
+                        academic: { 500: '#2563eb' }
                     },
                     fontFamily: {
-                        mono: ['JetBrains Mono', 'monospace'],
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Merriweather', 'serif']
                     }
@@ -104,117 +29,130 @@
             }
         }
     </script>
+    <style>
+        body {
+            background-color: #0d1117;
+            background-image: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(0, 255, 65, 0.05) 0%, transparent 50%);
+            color: #e6edf3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            background: rgba(22, 27, 34, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid #30363d;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-academic:hover {
+            border-color: #2563eb;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
+        }
+
+        .card-industry:hover {
+            border-color: #00ff41;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 255, 65, 0.15);
+        }
+
+        .icon-wrapper {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .icon-wrapper {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
-<body class="min-h-screen tech-grid">
-    <custom-navbar></custom-navbar>
-    <a href="#main-content" class="skip-link">Skip to content</a>
+<body class="items-center justify-center p-6">
 
-    <main id="main-content" class="min-h-screen flex items-center justify-center relative">
+    <div class="max-w-4xl w-full mx-auto text-center mt-12 md:mt-24">
 
-        <!-- Subtle Background Accent -->
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div
-                class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-primary-500/5 to-transparent rounded-full blur-3xl">
-            </div>
+        <!-- Profile Header -->
+        <div class="mb-12">
+            <img src="assets/profile.jpeg" alt="Ahmed Amin"
+                class="w-32 h-32 rounded-full object-cover object-top mx-auto mb-6 border-4 border-gray-800 shadow-2xl"
+                style="object-position: center 20%;">
+            <h1 class="text-4xl md:text-5xl font-bold font-serif mb-4 tracking-tight text-white">Ahmed M. Amin</h1>
+            <p class="text-lg text-slate-400 max-w-xl mx-auto">
+                Welcome. Please select the profile you would like to visit:
+            </p>
         </div>
 
-        <div class="container mx-auto px-6 py-24 text-center relative z-10">
+        <!-- Splitter Cards -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
-            <!-- Profile Image (Clickable - Opens LinkedIn) -->
-            <a href="https://www.linkedin.com/in/amnxlab/" target="_blank" class="inline-block group">
-                <img src="assets/profile.jpeg" alt="Ahmed Amin"
-                    class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top mx-auto mb-8 border-4 border-gray-800 shadow-2xl group-hover:border-primary-500 transition-colors"
-                    style="object-position: center 20%;"
-                    onerror="this.src='https://placehold.co/176x176/1a1a1a/00ff41?text=AA'">
+            <!-- Research Profile -->
+            <a href="research/index.html"
+                class="card card-academic relative p-8 rounded-2xl text-left group overflow-hidden block">
+                <div
+                    class="absolute top-0 right-0 w-32 h-32 bg-academic-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110">
+                </div>
+
+                <div
+                    class="icon-wrapper w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6 border border-gray-700 group-hover:bg-academic-500/20 group-hover:border-academic-500/50">
+                    <i data-feather="book-open" class="text-academic-500"></i>
+                </div>
+
+                <h2 class="text-2xl font-bold text-white mb-3 font-serif">Academic Profile</h2>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Research publications, conference talks, teaching experience, and academic CV. Focused on radar
+                    systems, signal processing, and SDR technology.
+                </p>
+
+                <div
+                    class="flex items-center text-academic-500 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                    View Academic Profile <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                </div>
             </a>
 
-            <!-- Main Heading -->
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 font-serif tracking-tight">
-                Ahmed Amin
-            </h1>
-
-            <p class="text-xl md:text-2xl text-slate-400 mb-4 max-w-2xl mx-auto">
-                Hardware Engineer | Researcher
-            </p>
-
-            <p class="text-lg text-slate-500 mb-8 max-w-xl mx-auto leading-relaxed">
-                Hardware Design Engineer specializing in PCB Design and RF Engineering.
-            </p>
-
-            <!-- Social Links (After Introduction) -->
-            <div class="flex justify-center gap-3 flex-wrap mb-12">
-                <a href="https://github.com/amnxlab" target="_blank"
-                    class="flex items-center gap-2 px-3 py-2 bg-gray-800/80 border border-gray-700 rounded-lg text-slate-300 hover:text-white hover:border-primary-500 hover:bg-gray-800 transition-all">
-                    <i data-feather="github" class="w-5 h-5"></i>
-                    <span class="text-sm font-medium">GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/amnxlab/" target="_blank"
-                    class="flex items-center gap-2 px-3 py-2 bg-gray-800/80 border border-gray-700 rounded-lg text-slate-300 hover:text-white hover:border-secondary-500 hover:bg-gray-800 transition-all">
-                    <i data-feather="linkedin" class="w-5 h-5"></i>
-                    <span class="text-sm font-medium">LinkedIn</span>
-                </a>
-                <a href="https://x.com/AMNxlab" target="_blank"
-                    class="flex items-center gap-2 px-3 py-2 bg-gray-800/80 border border-gray-700 rounded-lg text-slate-300 hover:text-white hover:border-sky-500 hover:bg-gray-800 transition-all">
-                    <i data-feather="twitter" class="w-5 h-5"></i>
-                    <span class="text-sm font-medium">X</span>
-                </a>
-                <a href="https://youtube.com/@AMNxLab" target="_blank"
-                    class="flex items-center gap-2 px-3 py-2 bg-gray-800/80 border border-gray-700 rounded-lg text-slate-300 hover:text-white hover:border-red-500 hover:bg-gray-800 transition-all">
-                    <i data-feather="youtube" class="w-5 h-5"></i>
-                    <span class="text-sm font-medium">YouTube</span>
-                </a>
-
-                <a href="mailto:ahmedamin@suumail.net"
-                    class="flex items-center gap-2 px-3 py-2 bg-gray-800/80 border border-gray-700 rounded-lg text-slate-300 hover:text-white hover:border-white hover:bg-gray-800 transition-all">
-                    <i data-feather="mail" class="w-5 h-5"></i>
-                    <span class="text-sm font-medium">Email</span>
-                </a>
-            </div>
-
-            <!-- Certifications & Achievements -->
-            <div class="certifications-section max-w-4xl mx-auto mb-16">
-                <div class="certification-badges-container">
-                    <!-- OrCAD Certification -->
-                    <a href="https://certifications.certnexus.com/eac98840-0fe8-49a2-adbc-b1b10d91f117#acc.N7elx2vA" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="certification-badge-link group"
-                       title="View OrCAD Cature Certified">
-                        <div class="badge-wrapper">
-                            <img src="assets/other/OrCAD_Capture_Badge.png" alt="OrCAD Certified Designer Badge" loading="lazy">
-                            <div class="badge-shine"></div>
-                        </div>
-                        <p class="badge-label">OrCAD Capture Certified</p>
-                    </a>
-
-                    <!-- SUU Industry Challenge -->
-                    <a href="https://badges.parchment.com/public/assertions/gzgyFlNbTQujp4shsb9MPw?identity__email=ahmedmohamed6071@gmail.com" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="certification-badge-link group"
-                       title="View SUU Industry Challenge Credential">
-                        <div class="badge-wrapper">
-                            <img src="assets/other/SUU_Challenge_badge.png" alt="SUU Industry Challenge Badge" loading="lazy">
-                            <div class="badge-shine"></div>
-                        </div>
-                        <p class="badge-label">SUU Industry Challenge</p>
-                    </a>
+            <!-- Industry Profile -->
+            <a href="industry/index.html"
+                class="card card-industry relative p-8 rounded-2xl text-left group overflow-hidden block">
+                <div
+                    class="absolute top-0 right-0 w-32 h-32 bg-primary-500/5 rounded-bl-full -z-10 transition-transform group-hover:scale-110">
                 </div>
-            </div>
+
+                <div
+                    class="icon-wrapper w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6 border border-gray-700 group-hover:bg-primary-500/10 group-hover:border-primary-500/30">
+                    <i data-feather="monitor" class="text-primary-500"></i>
+                </div>
+
+                <h2 class="text-2xl font-bold text-white mb-3 font-sans tracking-tight">Industry Portfolio</h2>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Engineering projects, technical blog, skills, and certifications. Showcasing hardware design,
+                    embedded systems, and PCB development.
+                </p>
+
+                <div
+                    class="flex items-center text-primary-500 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                    View Industry Portfolio <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                </div>
+            </a>
+
         </div>
-    </main>
 
-    <custom-footer></custom-footer>
+        <div class="mt-16 text-slate-500 text-sm">
+            <div class="flex justify-center gap-4 mb-4">
+                <a href="https://github.com/amnxlab" target="_blank" class="hover:text-white transition-colors"><i
+                        data-feather="github" class="w-5 h-5"></i></a>
+                <a href="https://www.linkedin.com/in/amnxlab/" target="_blank"
+                    class="hover:text-white transition-colors"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+                <a href="mailto:ahmedamin@suumail.net" class="hover:text-white transition-colors"><i data-feather="mail"
+                        class="w-5 h-5"></i></a>
+            </div>
+            &copy; 2026 Ahmed M. Amin
+        </div>
 
-    <script src="data/config.js"></script>
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="script.js"></script>
+    </div>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof feather !== 'undefined') feather.replace();
-        });
+        feather.replace();
     </script>
 </body>
 

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMNx Lab Blog | Technical Articles on Hardware Engineering</title>
+    <meta name="description"
+        content="In-depth articles, tutorials, and insights on electronics, embedded systems, PCB design, and RF technology by Ahmed Amin (AMNx).">
+    <meta name="keywords"
+        content="AMNx, AMNxLab, Ahmed Amin Blog, Technical Blog, Electronics Tutorials, Embedded Systems, PCB Design Guide, RF Engineering">
+    <meta name="author" content="Ahmed Amin">
+    <link rel="canonical" href="https://amnxlab.site/blog.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://amnxlab.site/blog.html">
+    <meta property="og:title" content="AMNx Lab Blog | Technical Articles on Hardware Engineering">
+    <meta property="og:description"
+        content="In-depth articles, tutorials, and insights on electronics, embedded systems, PCB design, and RF technology.">
+    <meta property="og:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://amnxlab.site/blog.html">
+    <meta name="twitter:title" content="AMNx Lab Blog | Technical Articles on Hardware Engineering">
+    <meta name="twitter:description"
+        content="In-depth articles, tutorials, and insights on electronics, embedded systems, PCB design, and RF technology.">
+    <meta name="twitter:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "AMNx Lab Blog",
+      "description": "Technical articles on electronics, embedded systems, PCB design, and RF engineering.",
+      "url": "https://amnxlab.site/blog.html",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Amin",
+        "alternateName": ["AMNx", "AMNxLab", "E-WOLF"]
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-article.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#3fb950' },
+                        secondary: { 500: '#58a6ff' }
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #0a0e14;
+        }
+
+        /* Brand header */
+        .brand-header {
+            background: linear-gradient(135deg, rgba(63, 185, 80, 0.05) 0%, rgba(88, 166, 255, 0.03) 100%);
+            border-bottom: 1px solid #21262d;
+            position: relative;
+        }
+
+        .brand-header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3fb950, #58a6ff, transparent);
+            opacity: 0.5;
+        }
+
+        .brand-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            border-color: #3fb950;
+            box-shadow: 0 0 20px rgba(63, 185, 80, 0.15);
+        }
+
+        .brand-logo img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .brand-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #e6edf3;
+        }
+
+        .brand-text .highlight {
+            color: #3fb950;
+        }
+
+        .tagline {
+            color: #6e7681;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Compact article cards */
+        .blog-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .blog-card:hover {
+            border-color: rgba(63, 185, 80, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .blog-card:hover .card-title {
+            color: #3fb950;
+        }
+
+        .card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+        }
+
+        .card-image-wrapper img {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .blog-card:hover .card-image-wrapper img {
+            transform: scale(1.08);
+        }
+
+        .card-title {
+            font-family: 'Space Grotesk', sans-serif;
+            transition: color 0.2s ease;
+        }
+
+        .category-tag {
+            background: rgba(63, 185, 80, 0.1);
+            border: 1px solid rgba(63, 185, 80, 0.25);
+            color: #3fb950;
+        }
+
+        .filter-btn {
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: #8b949e;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+            border-color: rgba(63, 185, 80, 0.3);
+            color: #e6edf3;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, rgba(63, 185, 80, 0.15), rgba(63, 185, 80, 0.08));
+            border-color: #3fb950;
+            color: #3fb950;
+            font-weight: 600;
+        }
+
+        .stats-badge {
+            background: rgba(22, 27, 34, 0.6);
+            border: 1px solid #30363d;
+            backdrop-filter: blur(8px);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .section-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, #30363d, transparent);
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#0a0e14]">
+    <custom-navbar></custom-navbar>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <main id="main-content" class="pt-20">
+        <!-- Brand Header -->
+        <section class="brand-header py-12">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="flex items-center justify-between flex-wrap gap-8">
+                    <!-- Brand Logo -->
+                    <div>
+                        <div class="brand-logo mb-4">
+                            <img src="../assets/logo.png" alt="AMNx Lab" class="w-8 h-8">
+                            <div>
+                                <div class="brand-text">
+                                    AMN<span class="highlight">x</span> Lab <span
+                                        style="color: #8b949e; font-weight: 500;">Blog</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="tagline">
+                            <i data-feather="zap" class="w-3 h-3 inline-block mr-1" style="color: #3fb950;"></i>
+                            Hardware Engineering Insights
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex gap-3">
+                        <div class="stats-badge rounded-lg px-5 py-3 text-center">
+                            <div class="text-2xl font-bold text-primary-500 font-display" id="total-articles">0</div>
+                            <div class="text-xs text-[#6e7681] font-medium uppercase tracking-wider">Articles</div>
+                        </div>
+                        <div class="stats-badge rounded-lg px-5 py-3 text-center">
+                            <div class="text-2xl font-bold text-secondary-500 font-display">4</div>
+                            <div class="text-xs text-[#6e7681] font-medium uppercase tracking-wider">Topics</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="mt-8 max-w-2xl">
+                    <p class="text-base text-[#8b949e] leading-relaxed">
+                        Technical deep-dives on <span class="text-[#c9d1d9] font-medium">PCB design</span>,
+                        <span class="text-[#c9d1d9] font-medium">embedded systems</span>,
+                        <span class="text-[#c9d1d9] font-medium">RF engineering</span>, and
+                        <span class="text-[#c9d1d9] font-medium">signal processing</span>.
+                        Real-world solutions from hands-on projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 max-w-6xl py-8">
+            <!-- Section Header with Filter -->
+            <div class="section-header">
+                <div class="section-line"></div>
+                <span class="section-title">Browse Articles</span>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Category Filter -->
+            <section class="mb-8">
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <button class="filter-btn active px-4 py-2 rounded-md text-sm font-medium transition-all"
+                        data-category="all">
+                        All
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium transition-all"
+                        data-category="PCB Design">
+                        PCB Design
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium transition-all"
+                        data-category="Embedded">
+                        Embedded
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium transition-all"
+                        data-category="RF & SDR">
+                        RF & SDR
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-md text-sm font-medium transition-all"
+                        data-category="Robotics & AI">
+                        Robotics & AI
+                    </button>
+                </div>
+            </section>
+
+            <!-- Articles Grid -->
+            <section id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Articles loaded via JS -->
+            </section>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="hidden text-center py-20">
+                <div
+                    class="w-20 h-20 mx-auto mb-4 rounded-xl bg-[#161b22] border border-[#30363d] flex items-center justify-center">
+                    <i data-feather="search" class="w-10 h-10 text-[#6e7681]"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">No articles found</h3>
+                <p class="text-[#8b949e]">Try a different category filter</p>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="../data/config.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script src="pages/blog.js"></script>
+    <script>
+        // Update total articles count
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalEl = document.getElementById('total-articles');
+            if (totalEl && typeof config !== 'undefined' && config.blogPosts) {
+                totalEl.textContent = config.blogPosts.length;
+            }
+            feather.replace();
+        });
+    </script>
+</body>
+
+</html>

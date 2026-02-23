@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Projects | Ahmed M. Amin | AMNxLab</title>
+    <meta name="description"
+        content="Explore technical projects by Ahmed Amin (AMNx): electronics, embedded systems, PCB design, robotics, RF/SDR systems, and AI implementations.">
+    <meta name="keywords"
+        content="AMNx, AMNxLab, Ahmed Amin Projects, Electronics Projects, Embedded Systems, PCB Design, Robotics, STM32, Arduino, Raspberry Pi, RF Engineering">
+    <meta name="author" content="Ahmed Amin">
+    <link rel="canonical" href="https://amnxlab.site/projects.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amnxlab.site/projects.html">
+    <meta property="og:title" content="Engineering Projects | Ahmed M. Amin | AMNxLab">
+    <meta property="og:description"
+        content="Explore technical projects by Ahmed Amin (AMNx): electronics, embedded systems, PCB design, robotics, and AI.">
+    <meta property="og:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://amnxlab.site/projects.html">
+    <meta name="twitter:title" content="Engineering Projects | Ahmed M. Amin | AMNxLab">
+    <meta name="twitter:description"
+        content="Explore technical projects by Ahmed Amin (AMNx): electronics, embedded systems, PCB design, robotics, and AI.">
+    <meta name="twitter:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Engineering Projects by Ahmed Amin",
+      "description": "A collection of technical projects in electronics, embedded systems, PCB design, and robotics.",
+      "url": "https://amnxlab.site/projects.html",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Amin",
+        "alternateName": ["AMNx", "AMNxLab", "E-WOLF", "Void0x11"]
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-article.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#3fb950' },
+                        secondary: { 500: '#58a6ff' }
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen tech-grid pt-16">
+    <custom-navbar></custom-navbar>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <main id="main-content" class="container mx-auto px-6 pt-32 pb-24 max-w-5xl">
+        <!-- Header -->
+        <section class="mb-8 text-center">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 mb-6">
+                <i data-feather="folder" class="w-4 h-4 text-primary-500"></i>
+                <span class="text-primary-500 font-medium text-sm">Portfolio</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Technical <span class="text-primary-500">Projects</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Electronics, embedded systems, PCB design, and robotics projects.
+            </p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="mb-8">
+            <div class="flex flex-wrap gap-3 justify-center items-center">
+                <button class="filter-btn active px-5 py-2.5 rounded-lg font-medium text-sm transition-all"
+                    data-category="all">All Projects</button>
+                <button class="filter-btn px-5 py-2.5 rounded-lg font-medium text-sm transition-all"
+                    data-category="Electronics & Embedded">Electronics</button>
+                <button class="filter-btn px-5 py-2.5 rounded-lg font-medium text-sm transition-all"
+                    data-category="RF & SDR">RF & SDR</button>
+                <button class="filter-btn px-5 py-2.5 rounded-lg font-medium text-sm transition-all"
+                    data-category="Robotics & AI">Robotics & AI</button>
+                <button class="filter-btn px-5 py-2.5 rounded-lg font-medium text-sm transition-all"
+                    data-category="Other">Other</button>
+            </div>
+        </section>
+
+        <!-- Project Count -->
+        <div class="flex items-center justify-between mb-6 text-sm text-slate-500">
+            <span id="project-count" class="font-mono">Loading projects...</span>
+        </div>
+
+        <!-- Projects Grid -->
+        <section id="projects-grid" class="blog-grid">
+            <!-- Projects will be loaded via JavaScript -->
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="../data/config.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script src="pages/projects.js"></script>
+    <script>feather.replace();</script>
+</body>
+
+</html>

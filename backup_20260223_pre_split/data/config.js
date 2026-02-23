@@ -4,7 +4,7 @@
 const config = {
     // Personal Information
     personal: {
-        name: "Ahmed M. Amin",
+        name: "Ahmed Mohamed Amin",
         title: "Electronics & RF Engineer – Radar Systems, SDR & Electronic Warfare",
         tagline: "Electronics & RF Engineer specializing in radar systems, SDR technology, and Electronic Warfare",
         bio: "My current work involves FMCW radar modeling, dual-band radar fusion, and cyber-physical security for wireless communication systems. I am particularly interested in bridging the gap between signal processing, embedded systems, and cybersecurity to develop innovative solutions for modern defense challenges.",
@@ -181,44 +181,16 @@ const config = {
                 {
                     name: "Applications of Microprocessors",
                     code: "EET 3780",
-                    tasks: "Modernized labs to make ARM assembly experiments more hands-on and repeatable using STM32 Nucleo boards, CPUlator, and Keil µVision."
+                    tasks: "ARM Assembly (STM32), DMA, ADC, and RTOS integration."
                 },
                 {
                     name: "Communication Circuits",
-                    code: "EET 3780",
-                    tasks: "Updated labs to include experimental small-signal transfer function extraction of LM386 amplifier stages and LC/RC filters."
-                },
-                {
-                    name: "Programming for Engineers",
-                    code: "ENGR 2170",
-                    tasks: "Evaluated foundational programming assignments and algorithms. Conducted hands-on debugging sessions to help students resolve logical errors and optimize their MATLAB control code."
-                },
-                {
-                    name: "Robotics and Automation I",
-                    code: "EET 1600-01",
-                    tasks: "Assisted students in integrating hardware and software. Guided laboratory sessions focused on sensor interfacing, motor control, and troubleshooting microcontroller-based robotics projects."
+                    code: "EET 4350",
+                    tasks: "RF Filter design, Bode analysis, and Signal Modulation."
                 }
             ],
             period: "Aug 2024 - Dec 2025",
-            description: "Guided engineering students through hands-on labs focusing on embedded development, low-level architecture, and communication circuit design."
-        },
-        {
-            role: "Electronics Laboratory Assistant",
-            institution: "Southern Utah University",
-            courses: [
-                {
-                    name: "ECE Prototyping Lab",
-                    code: "Lab Management",
-                    tasks: "Assisted in establishing a PCB fabrication lab using the Voltera Nova printer and CNC cutting machine to support rapid PCB projects and research."
-                },
-                {
-                    name: "Equipment Calibration",
-                    code: "Lab Operations",
-                    tasks: "Calibrated and verified measurement accuracy of oscilloscopes, multimeters, and power supplies. Engineered KiCAD templates to fix Voltera/CNC alignment."
-                }
-            ],
-            period: "Aug 2024 - May 2025",
-            description: "Maintained and established state-of-the-art laboratory equipment for RF and electronics rapid prototyping."
+            description: "Developed 8 bare-metal laboratories with STM32 drivers in ARM assembly (RCC, GPIO, SysTick, EXTI/NVIC, TIM-PWM, UART, SPI, ADC). Delivered weekly lectures on ARMv7-M architecture and instruction cycles."
         }
     ],
 
@@ -227,19 +199,11 @@ const config = {
         publications: [
             {
                 type: "journal",
-                title: "Integration of Balanced Fed Antenna Approach for SIC in beyond 5G of mobile networks",
+                title: "Coherent Estimator and Non-Coherent Signal-Level Fusion in Dual-Band FMCW Radar under Single-Sweep IF Constraints: A Statistical Evaluation across SNR and Range Regimes",
                 authors: "Ahmed M. Amin, Gandhiraj R., and Rajagopalan Thiruvengadathan",
-                status: "In Preparation (I-ETC 2026)",
-                journal: "I-ETC 2026",
-                bibtex: `@inproceedings{amin2026integration,\n  title={Integration of Balanced Fed Antenna Approach for SIC in beyond 5G of mobile networks},\n  author={Amin, Ahmed M. and Gandhiraj, R. and Thiruvengadathan, Rajagopalan},\n  booktitle={Intermountain Engineering, Technology and Computing (I-ETC)},\n  year={2026}\n}`
-            },
-            {
-                type: "journal",
-                title: "GPR Sensor Fusion for Robust Rover Localization in planetary rovers",
-                authors: "AI/ML Lab (Abstract Submission)",
-                status: "Abstract Submitted (EMI 2026)",
-                journal: "EMI Machine Learning in Mechanics 2026",
-                bibtex: `@inproceedings{amin2026gpr,\n  title={GPR Sensor Fusion for Robust Rover Localization in planetary rovers},\n  author={Amin, Ahmed M. and others},\n  booktitle={EMI Machine Learning in Mechanics},\n  year={2026}\n}`
+                status: "Manuscript under review",
+                journal: "To be submitted",
+                bibtex: `@article{amin2025coherent,\n  title={Coherent Estimator and Non-Coherent Signal-Level Fusion in Dual-Band FMCW Radar under Single-Sweep IF Constraints},\n  author={Amin, Ahmed M. and Gandhiraj, R. and Thiruvengadathan, Rajagopalan},\n  journal={Under Review},\n  year={2025}\n}`
             }
         ],
         conferences: [
@@ -247,22 +211,22 @@ const config = {
                 id: "C1",
                 title: "Radar System for Drone Detection",
                 venue: "UCUR 2025",
-                description: "Presented system concept, motivation, and design architecture integrating 5.8 GHz SDR-based FMCW radar and 24 GHz radar modules.",
-                link: "https://www.ucur.org/"
+                description: "Utah Conference on Undergraduate Research – Introduced system concept and 5.8 GHz SDR architecture.",
+                link: "https://www.ucur.org/abstracts/2025-abstracts/radar-system-for-drone-detection"
             },
             {
                 id: "C2",
                 title: "Low-Cost Dual-Band Radar System for Drone Detection and Tracking",
                 venue: "UASAL 2025",
-                description: "Demonstrated experimental validation of bistatic 5.8 GHz FMCW radar using log-periodic antennas and showing feasibility of TDoA/AoA-based localization.",
-                link: "https://www.utahacademy.org/"
+                description: "Utah Academy of Sciences, Arts & Letters – Demonstrated experimental validation of bistatic FMCW radar.",
+                link: "https://www.utahacademy.org/wp-content/uploads/2025/03/2025-UASAL-Annual-Conference-Program-Final-1.pdf"
             },
             {
                 id: "C3",
                 title: "Low-Cost Dual-Band Radar System for Drone Detection and Tracking (Final Capstone Poster)",
                 venue: "FOE 2025",
-                description: "Final capstone presentation summarizing the integrated dual-band radar system.",
-                link: "https://www.suu.edu/excellence/archive/"
+                description: "Festival of Excellence – Final capstone presentation outlining AI-driven prioritization phase.",
+                link: "https://www.suu.edu/excellence/archive/festival-of-excellence-2025.pdf"
             }
         ]
     },
