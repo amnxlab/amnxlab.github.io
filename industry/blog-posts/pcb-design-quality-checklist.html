@@ -7,6 +7,38 @@
     <title>6 Quick Ways to Judge PCB Design Quality | AMNx Lab Blog</title>
     <meta name="description"
         content="A practical checklist for evaluating PCB design quality, even if you're not an expert. Learn to spot common fatal mistakes in minutes.">
+    <link rel="canonical" href="https://amnxlab.site/industry/blog-posts/pcb-design-quality-checklist.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://amnxlab.site/industry/blog-posts/pcb-design-quality-checklist.html">
+    <meta property="og:title" content="6 Quick Ways to Judge PCB Design Quality | AMNx Lab Blog">
+    <meta property="og:description"
+        content="A practical checklist for evaluating PCB design quality, even if you're not an expert. Learn to spot common fatal mistakes in minutes.">
+    <meta property="og:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://amnxlab.site/industry/blog-posts/pcb-design-quality-checklist.html">
+    <meta name="twitter:title" content="6 Quick Ways to Judge PCB Design Quality | AMNx Lab Blog">
+    <meta name="twitter:description"
+        content="A practical checklist for evaluating PCB design quality, even if you're not an expert. Learn to spot common fatal mistakes in minutes.">
+    <meta name="twitter:image" content="https://amnxlab.site/assets/profile.jpeg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "6 Quick Ways to Judge PCB Design Quality",
+      "description": "A practical checklist for evaluating PCB design quality, even if you're not an expert.",
+      "url": "https://amnxlab.site/industry/blog-posts/pcb-design-quality-checklist.html",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Amin"
+      }
+    }
+    </script>
     <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../blog-article.css">
@@ -14,7 +46,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -415,7 +449,8 @@
     <main class="pt-24 pb-20">
         <!-- Back Link with Branding -->
         <div class="medium-container mb-8">
-            <a href="../blog.html" class="inline-flex items-center gap-2 text-sm text-[#8b949e] hover:text-primary-500 transition-colors font-sans group">
+            <a href="../blog.html"
+                class="inline-flex items-center gap-2 text-sm text-[#8b949e] hover:text-primary-500 transition-colors font-sans group">
                 <i data-feather="arrow-left" class="w-4 h-4"></i>
                 <span>AMN<span style="color: #3fb950;">x</span> Lab Blog</span>
             </a>
@@ -426,7 +461,7 @@
             <h1 class="article-title text-white">
                 6 Quick Ways to Judge PCB Design Quality
             </h1>
-            
+
             <p class="article-subtitle">
                 Whether you're reviewing a contractor's work, evaluating a product teardown, or learning PCB
                 design yourself, these six checkpoints will help you identify serious design flaws quickly.
@@ -489,16 +524,19 @@
                     </div>
                     <div class="callout-content">
                         <p><strong>Missing or poorly placed capacitors is a major red flag.</strong> This is the #1
-                            indicator of amateur or bad design. Decoupling capacitors filter high-frequency noise from power supplies and must be strategically placed.</p>
+                            indicator of amateur or bad design. Decoupling capacitors filter high-frequency noise from
+                            power supplies and must be strategically placed.</p>
                     </div>
                 </div>
 
-                <p>Every IC power pin needs proper decoupling. The effectiveness of a decoupling capacitor decreases exponentially with distance due to parasitic inductance in the traces.</p>
+                <p>Every IC power pin needs proper decoupling. The effectiveness of a decoupling capacitor decreases
+                    exponentially with distance due to parasitic inductance in the traces.</p>
 
                 <h3>Requirements Checklist</h3>
 
                 <ul>
-                    <li>Every IC power pin needs at least one decoupling capacitor (typically 0.1 µF ceramic + 10 µF bulk electrolytic)</li>
+                    <li>Every IC power pin needs at least one decoupling capacitor (typically 0.1 µF ceramic + 10 µF
+                        bulk electrolytic)</li>
                     <li>Capacitors <strong>MUST</strong> be placed within 5mm of the power pin (closer is better)</li>
                     <li>Via-in-pad or adjacent vias to ground plane are essential for low inductance</li>
                     <li>Multiple capacitor values provide filtering across different frequency ranges</li>
@@ -516,15 +554,15 @@
                 </div>
 
                 <figure>
-                    <img src="../assets/blog/pcb-trace-angle-comparison-minimal.png"
-                        alt="PCB Trace Angle Comparison">
+                    <img src="../assets/blog/pcb-trace-angle-comparison-minimal.png" alt="PCB Trace Angle Comparison">
                     <figcaption>Figure 1: 90° bends (Left) vs 45° bends (Right)</figcaption>
                 </figure>
 
                 <!-- Section 3 -->
                 <h2 id="length-matching">3. No Length Matching on High-Speed Signals</h2>
 
-                <p>Signal propagation delay is approximately 6 inches per nanosecond in FR-4. For multi-gigabit interfaces, even millimeter-level mismatches cause timing skew that leads to data corruption.</p>
+                <p>Signal propagation delay is approximately 6 inches per nanosecond in FR-4. For multi-gigabit
+                    interfaces, even millimeter-level mismatches cause timing skew that leads to data corruption.</p>
 
                 <p>This is <em>critically important</em> for:</p>
                 <ul>
@@ -541,10 +579,13 @@
                     </div>
                     <div class="callout-content">
                         <ul>
-                            <li>Look for <strong>serpentine traces</strong> (controlled meandering) to add precise delay</li>
-                            <li>All signals in the same timing group must have matched lengths (within ±5 mils typically)</li>
+                            <li>Look for <strong>serpentine traces</strong> (controlled meandering) to add precise delay
+                            </li>
+                            <li>All signals in the same timing group must have matched lengths (within ±5 mils
+                                typically)</li>
                             <li>Equal number of vias per signal (each via adds ~50-100 ps delay)</li>
-                            <li>Differential pair traces should be tightly coupled and length-matched within the pair</li>
+                            <li>Differential pair traces should be tightly coupled and length-matched within the pair
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -552,9 +593,12 @@
                 <!-- Section 4 -->
                 <h2 id="rf-feed-lines">4. Improper RF Feed Lines</h2>
 
-                <p>For any wireless or RF design, the antenna feed line is <strong>mission-critical</strong>. Impedance mismatches cause standing waves, signal reflections, and power loss—directly reducing transmission range and reception sensitivity.</p>
+                <p>For any wireless or RF design, the antenna feed line is <strong>mission-critical</strong>. Impedance
+                    mismatches cause standing waves, signal reflections, and power loss—directly reducing transmission
+                    range and reception sensitivity.</p>
 
-                <p>At RF frequencies (above 100 MHz), traces behave as transmission lines and must maintain consistent <strong>characteristic impedance</strong> to prevent reflections.</p>
+                <p>At RF frequencies (above 100 MHz), traces behave as transmission lines and must maintain consistent
+                    <strong>characteristic impedance</strong> to prevent reflections.</p>
 
                 <figure>
                     <img src="../assets/blog/pcb-serpentine-trace-minimal.png" alt="Serpentine Trace Example">
@@ -676,8 +720,8 @@
                 <div class="share-section">
                     <h3 class="share-title">Share This Article</h3>
                     <div class="share-buttons">
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank"
-                            rel="noopener" class="share-btn">
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" rel="noopener"
+                            class="share-btn">
                             <i data-feather="linkedin" class="w-4 h-4"></i>
                             LinkedIn
                         </a>
@@ -695,14 +739,14 @@
                 <!-- Contact -->
                 <div class="share-section">
                     <h3 class="share-title">Questions or Feedback?</h3>
-                    <p style="color: #8b949e; font-size: 14px; margin-bottom: 16px;">Found this helpful? Have corrections or suggestions? Let's connect!</p>
+                    <p style="color: #8b949e; font-size: 14px; margin-bottom: 16px;">Found this helpful? Have
+                        corrections or suggestions? Let's connect!</p>
                     <div class="share-buttons">
                         <a href="mailto:ahmedamin@suumail.net" class="share-btn">
                             <i data-feather="mail" class="w-4 h-4"></i>
                             Email
                         </a>
-                        <a href="https://www.linkedin.com/in/amnxlab/" target="_blank" rel="noopener"
-                            class="share-btn">
+                        <a href="https://www.linkedin.com/in/amnxlab/" target="_blank" rel="noopener" class="share-btn">
                             <i data-feather="linkedin" class="w-4 h-4"></i>
                             LinkedIn
                         </a>
@@ -711,13 +755,17 @@
 
                 <!-- Blog Branding -->
                 <div style="margin-top: 3em; padding-top: 2em; border-top: 1px solid #30363d; text-align: center;">
-                    <a href="../blog.html" class="blog-brand-link" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 24px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
-                        <img src="../assets/logo.png" alt="AMNx Lab" style="width: 32px; height: 32px; object-fit: contain;">
+                    <a href="../blog.html" class="blog-brand-link"
+                        style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 24px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+                        <img src="../assets/logo.png" alt="AMNx Lab"
+                            style="width: 32px; height: 32px; object-fit: contain;">
                         <div style="text-align: left;">
-                            <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #e6edf3;">
+                            <div
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #e6edf3;">
                                 AMN<span style="color: #3fb950;">x</span> Lab Blog
                             </div>
-                            <div style="font-size: 12px; color: #6e7681; font-family: 'JetBrains Mono', monospace;">More Hardware Engineering Articles →</div>
+                            <div style="font-size: 12px; color: #6e7681; font-family: 'JetBrains Mono', monospace;">More
+                                Hardware Engineering Articles →</div>
                         </div>
                     </a>
                 </div>

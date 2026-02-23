@@ -1,23 +1,4 @@
-# robots.txt for amnxlab.site
-# Ahmed Mohamed Amin - Electronics & RF Engineer
-
 User-agent: *
 Allow: /
 
-# Allow search engine bots full access
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Disallow access to specific directories
-Disallow: /backup*/
-Disallow: /.git/
-Disallow: /.github/
-
-# Sitemap location
 Sitemap: https://amnxlab.site/sitemap.xml
-
-# Host preference
-Host: https://amnxlab.site
