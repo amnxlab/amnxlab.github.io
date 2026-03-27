@@ -1,0 +1,24 @@
+[
+  {
+    "id": "amin2025-gpr",
+    "title": "Ground-penetrating Radar Sensor Fusion for Planetary Rover Localization",
+    "authors": ["A. M. Amin", "J. Doe"],
+    "venue": "International Journal of Robotics Research",
+    "year": 2025,
+    "doi": "10.1234/ijrr.2025.001",
+    "pdf": "assets/pubs/amin2025-gpr.pdf",
+    "abstract": "We present a decentralized multi-sensor fusion framework that integrates GPR, IMU, and odometry for rover localization in GPS-denied environments.",
+    "slug": "amin2025-gpr"
+  },
+  {
+    "id": "amin2024-5g",
+    "title": "Self-Interference Cancellation Antenna Design for Full-Duplex 5G Systems",
+    "authors": ["A. M. Amin", "S. Smith"],
+    "venue": "IEEE Transactions on Antennas and Propagation",
+    "year": 2024,
+    "doi": "10.1109/TAP.2024.01234",
+    "pdf": "assets/pubs/amin2024-5g.pdf",
+    "abstract": "Design and measurement of a dual-fed microstrip antenna with integrated quadrature coupler providing >40 dB isolation for self-interference cancellation.",
+    "slug": "amin2024-5g"
+  }
+]

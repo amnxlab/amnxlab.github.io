@@ -4,6 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications — Ahmed M. Amin</title>
+    <meta name="description" content="Publications by Ahmed M. Amin — radar, RF, and sensor fusion research.">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Ahmed M. Amin</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html" aria-current="page">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+        <h1 class="page-title">Publications</h1>
+        <p class="prose">A curated list of peer-reviewed articles, conference papers, and technical reports.</p>
+
+        <div style="margin: 1.5em 0; display:flex; gap:1em; align-items:center;">
+            <label for="year-filter" style="white-space:nowrap;">Filter by year:</label>
+            <select id="year-filter">
+                <option value="all">All</option>
+            </select>
+            <input id="search" placeholder="Search title or author" style="flex:1; padding:0.4em;" />
+        </div>
+
+        <div id="publications-list"></div>
+    </main>
+
+    <script src="pages/publications.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Ahmed M. Amin</title>
     <meta name="description"
         content="Publications and manuscripts by Ahmed M. Amin — Radar Systems, Signal Processing, and RF Engineering research.">
